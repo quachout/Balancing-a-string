@@ -1,3 +1,10 @@
+/*
+examples:
+“azABaabza” should return 5 because "ABaab"
+"TacoCat" should return -1 because it is not balanced
+"AcZCbaBz" should return 8 because it is the entire string that is balanced
+*/
+
 def balance_string(S):
   counter = 0
   upperCaseChars = []
