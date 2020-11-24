@@ -1,4 +1,8 @@
 /*
+The string is balance if every upper case letter has a lower case letter. 
+If that is true, then return(int) the longest fragment that is possible for that string.
+If that is false, then return(int) -1 
+
 examples:
 “azABaabza” should return 5 because "ABaab"
 "TacoCat" should return -1 because it is not balanced
