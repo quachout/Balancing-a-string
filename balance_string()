@@ -2,20 +2,20 @@ def balance_string(S):
   counter = 0
   upperCaseChars = []
   lowerCaseChars = []
-  for i in S:
-    if i.isupper() == True:
-      upperCaseChars.append(i)
+  for letter in S:
+    if letter.isupper() == True:
+      upperCaseChars.append(letter)
     else:
-      lowerCaseChars.append(i)
+      lowerCaseChars.append(letter)
   largestCount = []
   balancedLetters = []
-  for i in upperCaseChars:
-    if i.lower() in lowerCaseChars:
-        balancedLetters.append(i)
-        balancedLetters.append(i.lower())
+  for letter in upperCaseChars:
+    if letter.lower() in lowerCaseChars:
+        balancedLetters.append(letter)
+        balancedLetters.append(letter.lower())
 
-  for i in S:
-    if i in balancedLetters:
+  for letter in S:
+    if letter in balancedLetters:
       counter+= 1
       if len(S) == counter:
         return counter
